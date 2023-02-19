@@ -1,0 +1,25 @@
+.container1 {
+    height: 10vh;
+}
+
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container2 > div {
+    display: inline-block;
+    border: 2px solid black;
+    text-align: center;
+    width: 15vw;
+    height: 15vh;
+    margin-left: 5vw;
+    margin-right: 4vw;
+    margin-top: 5vh;
+}
+.container2 > div > div{
+    display: inline-block;
+    width: 7vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
