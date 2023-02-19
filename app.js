@@ -6,20 +6,24 @@ const read = document.getElementById('read')
 const container2 = document.querySelector('.container2')
 let button = document.querySelectorAll('button')
 
-
 const library = [];
+
+
+function readCheck(str) {
+    if (str.checked) return 'Yes'
+    else return 'No'
+}
 
 function book(title, author, pages, read) {
     this.title = title;
     this.author = author;
     this.pages = pages;
     this.read = read;
-    return this.title;
 }
 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    library.push(new book(title.value, author.value, pages.value, read.value))
+    library.push(new book(title.value, author.value, pages.value, readCheck(read)))
     add()
     button = document.querySelectorAll('button')
 })
