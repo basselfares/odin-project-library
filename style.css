@@ -2,6 +2,23 @@
     height: 10vh;
 }
 
+form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form > * {
+    display: inline-block;
+    height: 2vh;
+    width: 40vw;
+    text-align: center;
+}
+
+form > input {
+    margin-bottom: 1vh;
+}
+
+
 .container2 {
     display: flex;
     flex-wrap: wrap;
@@ -15,7 +32,7 @@
     height: 15vh;
     margin-left: 5vw;
     margin-right: 4vw;
-    margin-top: 5vh;
+    margin-top: 20vh;
 }
 .container2 > div > div{
     display: inline-block;
